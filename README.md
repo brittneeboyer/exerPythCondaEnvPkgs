@@ -39,7 +39,7 @@
 |   Concept   |         Description or short answer         |
 |     ---     |                     ---                     |
 |What is the purpose of having different environments?     |To create separate environments for each purpose of python; it helps with the organization of python.|
-|What is the default package manager in Python?            |(enter description or short answer here)|
+|What is the default package manager in Python?            |pip|
 |How do you manage environments and packages in Anaconda?  |Using the terminal, you can use syntax like "conda list" and "conda env list" (and all the other codes below) to view, add, and change the environments and packages in Anaconda.|
 |`conda list`       |Shows you the packages in the environment|
 |`conda env list`       |Shows you the list of environments|
