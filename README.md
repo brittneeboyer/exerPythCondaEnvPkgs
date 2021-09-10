@@ -38,35 +38,39 @@
 
 |   Concept   |         Description or short answer         |
 |     ---     |                     ---                     |
-|What is the purpose of having different environments?     |(enter description or short answer here)|
+|What is the purpose of having different environments?     |To create separate environments for each purpose of python; it helps with the organization of python.|
 |What is the default package manager in Python?            |(enter description or short answer here)|
-|How do you manage environments and packages in Anaconda?  |(enter description or short answer here)|
-|`conda list`       |(enter description or short answer here)|
-|`conda env list`       |(enter description or short answer here)|
-|How do you keep your base environment unchanged?       |(enter description or short answer here)|
-|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(enter description or short answer here)|
-|`conda create --name XXXX`       |(enter description or short answer here)|
-|`source activate XXXX`       |(enter description or short answer here)|
-|`conda install YYYY`       |(enter description or short answer here)|
-|channels in Conda       |(enter description or short answer here)|
-|`conda install -c ZZZZ YYYY`       |(enter description or short answer here)|
-|`conda config --show channels`       |(enter description or short answer here)|
-|`conda config --add channels ZZZZ`       |(enter description or short answer here)|
-|conda-forge.org       |(enter description or short answer here)|
-|`source deactivate`       |(enter description or short answer here)|
-|`conda config --get channels`       |(enter description or short answer here)|
+|How do you manage environments and packages in Anaconda?  |Using the terminal, you can use syntax like "conda list" and "conda env list" (and all the other codes below) to view, add, and change the environments and packages in Anaconda.|
+|`conda list`       |Shows you the packages in the environment|
+|`conda env list`       |Shows you the list of environments|
+|How do you keep your base environment unchanged?       |You can create new environments and activate them so that you don't change the base environment.|
+|What is the link to the Conda cheat sheet? (link in video notes is broken)      |https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf (from a Google search, not video link)|
+|`conda create --name XXXX`       |Creates a new environment|
+|`source activate XXXX`       |Activates the new environment|
+|`conda install YYYY`       |Installs a package within the activated environment|
+|channels in Conda       |The path or location that tells python where to install a package|
+|`conda install -c ZZZZ YYYY`       |Installs a package that Anaconda doesn't already recognize. ZZZZ is the channel and YYYY is the package name.|
+|`conda config --show channels`       |Shows you what channels exist|
+|`conda config --add channels ZZZZ`       |Adds a new existing channel, like Conda-Forge.|
+|conda-forge.org       |A website that includes all of the packages included in the Conda-Forge channel.|
+|`source deactivate`       |Deactivates the environment you were working in.|
+|`conda config --get channels`       |Tells you which channels are highest priority (meaning it'll take packages versions from here first) and lowest priority.|
 
 * After creating the environments he created in the video on your computer, what would the results of running the command `conda env list` look like with the da35 environment activated. Paste the output from your command prompt in the code block below.
 
 ```
-#Paste your results here.
+# conda environments:
+#
+base                     /Users/brittneewestra/opt/anaconda3
+ai37                     /Users/brittneewestra/opt/anaconda3/envs/ai37
+da35                  *  /Users/brittneewestra/opt/anaconda3/envs/da35
 
 
 ```
 * What command would you use to remove the environments you created for this exercise from your computer?
 
 ```
-#Type the command here.
+source deactivate
 
 ```
 ## 2021 Update
